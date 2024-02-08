@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+ font-size: 16px;
+ font-family: 'Times New Roman', Times, serif; 
+}
 nav {
     background-color: black;
     padding 10px;
@@ -12,27 +22,30 @@ nav {
   h1 {
     color: steelblue;
   }
-  
-  img {
+
+  main{
+    max-width: 648px;
+  }
+
+ main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px pink;
+    float: right;
+    margin: 0 0 1rem 1rem;
   }
   
   p {
-    padding: 10px;
+    margin: 1rem;
   }
+
 
   aside {
     width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(, green, blue, alpha);
-    padding: 1em;
-    background-color: #eee; 
-    color: #333;
-    text-align: center; 
+    text-align: center;
+    position: relative; 
 }
 
 aside img{
@@ -40,9 +53,25 @@ aside img{
   height: autor;
 }
 
+aside h2{
+  position: absolute;
+  top: 70px;
+  left: 180px;
+}
 footer{
   margin-top: 1em;
   border-top: 1px solid #000;
   text-align: center;
+}
 
+/* class selectors */
+.box{
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+background-color: #eee;
+color: #000;
+}
+
+.indent{
+  padding-left: 1rem;
 }
