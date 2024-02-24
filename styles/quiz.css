@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+.grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+nav {
+  background-color: steelblue;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.checkmark {
+  background-color: #333333;
+  color: #fff;
+  padding: 4px 7px;
+  font-size: small;
+  position: relative;
+  bottom: 6px;
+}
+
+h1 {
+  color: #051089;
+  padding: 18px;
+  margin-bottom: 4px;
+  margin-left: 130px;
+  text-align: start;
+}
+
+main {
+  margin: 1rem;
+  grid-column: 1/2;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 2rem;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+}
+
+.quiz label,
+input,
+textarea,
+select {
+  padding: 6px;
+  width: 90%;
+}
+
+.quiz label::first-letter,
+.quiz label:nth-child(2) {
+  font-weight: bolder;
+  color: #051089;
+}
+
+.code {
+  background-color: #333333;
+  color: #fff;
+  font-size: small;
+  padding: 8px;
+  width: 65%;
+}
+
+.quiz button {
+  background-color: #000080;
+  color: #fff;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+.heart {
+  color: red;
+  font-weight: bolder;
+}
